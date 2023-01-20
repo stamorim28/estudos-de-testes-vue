@@ -1,11 +1,10 @@
 import { Server } from 'miragejs';
 import factories from './factories';
-import fixtures from './fixtures';
 import routes from './routes';
 import models from './models';
 import seeds from './seeds';
 
-const config = environment => {
+const config = (environment) => {
   const config = {
     environment,
     factories,
@@ -13,10 +12,6 @@ const config = environment => {
     routes,
     seeds,
   };
-
-  if (Object.keys(fixtures).length) {
-    config.fixtures = fixtures;
-  }
 
   return config;
 };
