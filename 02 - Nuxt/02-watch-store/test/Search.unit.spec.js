@@ -1,6 +1,5 @@
 import { mount } from '@vue/test-utils';
 import Search from '@/components/Search';
-import { makeServer } from '@/miragejs/server';
 
 describe('Search - unit', () => {
   it('should mount the component', () => {
